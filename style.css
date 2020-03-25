@@ -6,14 +6,16 @@
 
 body{
   align-items: center;
-  background: #ecf3f3;
+  background: #0e2634;
 }
 
 .center{
+  position: absolute;
+  z-index: 2;
   display: flex;
   float: left;
-  background-color: #6db7e2;
-  border-radius: 10px;
+  background-color: rgba(114, 180, 218, 0.75);
+  box-shadow: -20px 20px rgba(35, 97, 133, 0.65);
   margin: 10em;
   padding: 4em;
   height: auto;
@@ -27,13 +29,11 @@ h1{
 
 .center ul{
   color: white;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
   font-weight: 100;
   font-size: 1.25em;
   list-style: none;
-}
-
-.center li{
 }
 
 input{
@@ -41,13 +41,14 @@ input{
   box-sizing: border-box;
   height: 34px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
+  color: white;
+  border: none;
+  background-color: #1b4a65;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 10px;
 }
 
 .start{
@@ -59,8 +60,40 @@ input{
   margin-top: 1.25em;
   padding: .75em;
   color: white;
+  letter-spacing: 5px;
   font-family: 'Work Sans', sans-serif;
-  background-color: #3694ca;
+  background-color: #c9c936;
+  transition-duration: 0.2s;
+
+
+    background: linear-gradient(90deg, #a3b15d, #bad43a, #d0f41a);
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+
+}
+
+.start:hover {
+  background-color: #8d8d25;
+  color: white;
 }
 
 .upper{
@@ -69,9 +102,24 @@ input{
   margin-bottom: 2em;
 }
 
+footer{
+  position: fixed;
+  font-size: 1.1em;
+  font-family: 'Source Code Pro', monospace;
+  padding-right: 1.5em;
+  padding-bottom: 1.25em;
+  bottom: 0;
+  font-weight: 800;
+  margin-right: 10%;
+  width: 100%;
+  color: gray;
+  text-align: right;
+}
+
 /*Background Particle Animation */
 
 #particle-container{
+  z-index: 1;
 }
 
 .particle {
@@ -122,8 +170,8 @@ input{
   -webkit-animation: particle-animation-2 60s infinite;
           animation: particle-animation-2 60s infinite;
   opacity: 0.4;
-  height: 9px;
-  width: 9px;
+  height: 25px;
+  width: 25px;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
   -webkit-transform: translate3d(67vw, 45vh, 2px);
@@ -148,8 +196,8 @@ input{
   -webkit-animation: particle-animation-3 60s infinite;
           animation: particle-animation-3 60s infinite;
   opacity: 0.79;
-  height: 9px;
-  width: 9px;
+  height: 35px;
+  width: 35px;
   -webkit-animation-delay: -0.6s;
           animation-delay: -0.6s;
   -webkit-transform: translate3d(6vw, 49vh, 1px);
@@ -174,8 +222,8 @@ input{
   -webkit-animation: particle-animation-4 60s infinite;
           animation: particle-animation-4 60s infinite;
   opacity: 0.22;
-  height: 8px;
-  width: 8px;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
   -webkit-transform: translate3d(23vw, 87vh, 13px);
@@ -200,8 +248,8 @@ input{
   -webkit-animation: particle-animation-5 60s infinite;
           animation: particle-animation-5 60s infinite;
   opacity: 0.93;
-  height: 7px;
-  width: 7px;
+  height: 25px;
+  width: 25px;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
   -webkit-transform: translate3d(2vw, 89vh, 15px);
@@ -226,8 +274,8 @@ input{
   -webkit-animation: particle-animation-6 60s infinite;
           animation: particle-animation-6 60s infinite;
   opacity: 0.18;
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
   -webkit-transform: translate3d(70vw, 28vh, 32px);
@@ -252,8 +300,8 @@ input{
   -webkit-animation: particle-animation-7 60s infinite;
           animation: particle-animation-7 60s infinite;
   opacity: 0.55;
-  height: 9px;
-  width: 9px;
+  height: 15px;
+  width: 15px;
   -webkit-animation-delay: -1.4s;
           animation-delay: -1.4s;
   -webkit-transform: translate3d(46vw, 38vh, 40px);
@@ -278,8 +326,8 @@ input{
   -webkit-animation: particle-animation-8 60s infinite;
           animation: particle-animation-8 60s infinite;
   opacity: 0.9;
-  height: 7px;
-  width: 7px;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: -1.6s;
           animation-delay: -1.6s;
   -webkit-transform: translate3d(10vw, 85vh, 85px);
@@ -304,8 +352,8 @@ input{
   -webkit-animation: particle-animation-9 60s infinite;
           animation: particle-animation-9 60s infinite;
   opacity: 0.38;
-  height: 7px;
-  width: 7px;
+  height: 34px;
+  width: 34px;
   -webkit-animation-delay: -1.8s;
           animation-delay: -1.8s;
   -webkit-transform: translate3d(64vw, 72vh, 60px);
@@ -861,12 +909,12 @@ input{
   background: #2638d9;
 }
 
+/* Vibe Logo */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
   	html{
     	height:90%;
 }
-
-/* Vibe Logo */
 
 .vibe{
   margin: 4em;
