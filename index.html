@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
@@ -9,9 +9,6 @@
     <title></title>
   </head>
   <body>
-
-    <script>
-    </script>
 
   <div class="center">
 
@@ -35,7 +32,7 @@
               <label for="uname"><b>Name</b></label>
             </li>
             <li class="upper">
-              <input type="text" placeholder="" name="uname" required>
+              <input type="text" id="usrname" name="uname" placeholder="" required>
             </li>
             <li>
               <label for="psw"><b>Key</b></label>
@@ -44,13 +41,20 @@
               <input type="password" placeholder="" name="psw" required>
             </li>
             <li>
-              <button onclick="start()" class="start" type="submit">START</button>
+              <button class="start" onclick="myFunction()">START</button>
             </li>
           </ul>
         </div>
       </form>
   </div>
 
+  <script>
+    var user_name;
+    function myFunction(){
+      var itsname = document.getElementById("usrname").value;
+      this.user_name = itsname;
+    }
+  </script>
 
 <!--- End Login form --->
 
