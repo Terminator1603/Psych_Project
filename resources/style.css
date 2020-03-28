@@ -313,7 +313,7 @@ footer{
   }
 
   .question{
-    font-size: .8em;
+    font-size: 2em;
   }
 
   .send{
@@ -324,11 +324,13 @@ footer{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 2em;
     margin: 5%;
+    width: 40%;
   }
 
   .input_field{
+    font-size: 2em;
     width: 40vw;
   }
 
