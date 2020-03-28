@@ -99,7 +99,7 @@ input{
 .upper{
   padding: 0;
   margin-top: 5px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 footer{
@@ -332,6 +332,10 @@ footer{
   .input_field{
     font-size: 2em;
     width: 40vw;
+  }
+
+  #usrname{
+    font-size: 1.3em;
   }
 
 }
