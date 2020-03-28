@@ -67,14 +67,11 @@ input{
   font-family: 'Work Sans', sans-serif;
   background-color: #c9c936;
   transition-duration: 0.2s;
-
-
-    background: linear-gradient(90deg, #a3b15d, #bad43a, #d0f41a);
-    background-size: 200% 200%;
-
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
+  background: linear-gradient(90deg, #a3b15d, #bad43a, #d0f41a);
+  background-size: 200% 200%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
 }
 
 @-webkit-keyframes Animation {
@@ -187,7 +184,66 @@ footer{
 	animation-delay:.4s;
 }
 
+/* For questions */
 
+.main{
+  justify-content: center;
+  background-color: rgba(114, 180, 218, 0.75);
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  z-index: 2;
+  position: absolute;
+  height: 100vh;
+  margin-top: 10vh;
+  min-height: 320px;
+  margin-bottom: 10vh;
+}
+
+.question{
+  text-align: center;
+  padding: 5%;
+  background-color: #1a4c82;
+  margin: 5%;
+  margin-bottom: 10%;
+}
+
+.input_field{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.answer{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5%;
+  resize: none;
+  width: 40vw;
+  height: 30vh;
+  background-color: #113e6d;
+  border: none;
+  box-shadow: inset 5px 5px 10px #0a223d;
+  color: white;
+  padding: 20px 20px;
+}
+
+.send{
+  background-color: #206bbc;
+  border: none;
+  color: white;
+  padding: 1.5% 2.5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+}
 
 @media only screen and (orientation: portrait){
   .center{
@@ -240,7 +296,7 @@ footer{
     font-size: 6vw;
   }
 
-  input{
+  .upper input{
     width: 60vw;
     height: 7.5vh;
   }
@@ -249,6 +305,30 @@ footer{
     height: 10vh;
     width: 60vw;
     font-size: 6vw;
+  }
+
+  .answer{
+    padding: 10px 10px;
+  }
+
+  .question{
+    font-size: .8em;
+  }
+
+  .send{
+    background-color: #206bbc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 5%;
+  }
+
+  .input_field{
+    width: 40vw;
   }
 
 }
