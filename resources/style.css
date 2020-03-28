@@ -189,13 +189,13 @@ footer{
 .main{
   justify-content: center;
   background-color: rgba(114, 180, 218, 0.75);
-  width: 60vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   z-index: 2;
   position: absolute;
   height: 100vh;
-  margin-top: 10vh;
+  margin-top: 5vh;
   min-height: 320px;
   margin-bottom: 10vh;
 }
@@ -216,7 +216,7 @@ footer{
   display: block;
   float: left;
   font-size: 1.5em;
-  width: 70%;
+  width: 80%;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -225,13 +225,14 @@ footer{
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5%;
   resize: none;
-  width: 40vw;
+  width: 57vw;
   height: 30vh;
   background-color: #113e6d;
   border: none;
   box-shadow: inset 5px 5px 10px #0a223d;
   color: white;
   padding: 20px 20px;
+  font-size: 1.5em;
 }
 
 .send{
