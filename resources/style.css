@@ -298,6 +298,7 @@ footer{
   }
 
   .upper input{
+    font-size: 1.4em;
     width: 60vw;
     height: 7.5vh;
   }
@@ -332,10 +333,6 @@ footer{
   .input_field{
     font-size: 2em;
     width: 40vw;
-  }
-
-  #usrname{
-    font-size: 1.3em;
   }
 
 }
