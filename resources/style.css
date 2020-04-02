@@ -1,6 +1,6 @@
 :root{
     --blue: #ECF6FF;
-    --darkblue: #006C9A;
+    --darkblue: #000839;
     --yellow: #ffa41b;
     --darkyellow: #909861;
 }
@@ -45,32 +45,33 @@ header h1{
     transform: translate(-50%);
 }
 
-/*header h2{
-    font-weight: 900;
+/*h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%);
-    color: rgba(0, 8, 57, 0.75);
-    letter-spacing: 0.1rem;
+    color:white;
 }*/
 
 p{
     font-weight: 500;
     font-size: 1.5rem;
+    color: white;
 }
 
 .main{
     position: relative;
-    background: var(--blue);
+    background: rgb(147, 177, 202, 0.85);
     height: 50vh;
     width: 70%;
     max-width: 500px;
     min-width: 400px;
     min-height: 450px;
     margin: auto;
-    padding-bottom: 10rem;
-    padding: 5rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
     box-shadow: 10px 10px rgba(0,0,0,0.25);
 }
 
@@ -84,6 +85,26 @@ p{
     text-align: center;
 }
 
+footer{
+    margin-bottom: .5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    font-size: .8rem;
+    color: white;
+}
+
+h3{
+    font-family: 'Roboto Mono', monospace;
+}
+
+img{
+    height: 125px;
+    width: 125px;
+    margin: auto;
+}
+
 /* Buttons */
 
 .btn{
@@ -94,6 +115,7 @@ p{
     padding: 2.5%;
     background: var(--yellow);
     border: none;
+    color: white;
 }
 
 .btn-lg{
@@ -107,12 +129,12 @@ input{
     box-shadow: inset 5px 5px 4px rgba(0,0,0,0.25);
     outline: none;
     border: none;
-    background: var(--darkblue);
+    background: #262B37;
     color: white;
 }
 
 .input-lg{
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 5%;
 }
 
