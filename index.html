@@ -1,106 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="resources/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Vibe! - Outfriend your wits</title>
+</head>
+<body>
 
-  <div class="center">
+    <div id="particles-js"></div>
 
-    <div class="vibe2">
-          <span class="back">
-            <span>V</span>
-            <span>I</span>
-            <span>B</span>
-            <span>E</span>
-            <span>!</span>
-          </span>
+    <div class="content">
+
+        <header>
+
+            <div class="logo">
+                <span class="back">
+                    <span>V</span>
+                    <span>I</span>
+                    <span>B</span>
+                    <span>E</span>
+                    <span>!</span>
+                </span>
+            </div>
+            
+            <!--<h2>Outfriend your wits</h2>-->
+        </header>
+    
+        <div class="main">
+            <div class="container">
+                <p>Enter your username</p>
+                <input class="input input-lg"type="text">
+                <button class="btn btn-lg">Join</button>
+                <button class="btn btn-lg">Create</button>
+            </div>
+        
+
     </div>
 
-<!--- Login form --->
 
-  <div class="form">
-    <form action="questions.html" method="post">
-        <div class="login">
-          <ul>
-            <li>
-              <label for="uname"><b>Name</b></label>
-            </li>
-            <li class="upper">
-              <input type="text" id="usrname" name="uname" placeholder="" required>
-            </li>
-            <li>
-              <label for="psw"><b>Key</b></label>
-            </li>
-            <li class="upper">
-              <input type="password" placeholder="" name="psw" required>
-            </li>
-            <li>
-              <button class="start" a=" "id="usrnm">START</button>
-            </li>
-          </ul>
-        </div>
-      </form>
-  </div>
+    <script>
+        particlesJS.load('particles-js',
+        'particles.json', function(){
+            console.log('Particles.json loaded');
+        });
+    </script>
 
-<!--- End Login form --->
-
-    <div class="vibe">
-          <span class="back">
-            <span>V</span>
-            <span>I</span>
-            <span>B</span>
-            <span>E</span>
-            <span>!</span>
-          </span>
-    </div>
-  </div>
-
-<!--- Background Particles --->
-
-    <div id="particle-container">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-    </div>
-
-<!--- End Background Particles --->
-
-  <footer>
-    <p>Developed by Verge 2.1, 2020</p>
-  </footer>
-
-  </body>
+</body>
 </html>
