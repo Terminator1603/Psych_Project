@@ -1,6 +1,6 @@
 :root{
     --blue: #ECF6FF;
-    --darkblue: #000839;
+    --darkblue: #0e2634;
     --yellow: #ffa41b;
     --darkyellow: #909861;
 }
@@ -63,7 +63,7 @@ p{
 
 .main{
     position: relative;
-    background: rgb(147, 177, 202, 0.85);
+    background: rgba(114, 180, 218, 0.75);
     height: 50vh;
     width: 70%;
     max-width: 500px;
@@ -77,16 +77,15 @@ p{
 
 .container{
     height: 100%;
-    grid-template-rows: 0fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 footer{
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -100,52 +99,23 @@ h3{
 }
 
 img{
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     margin: auto;
-}
-
-/* Buttons */
-
-.btn{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    box-shadow: 4px 4px rgba(0,0,0,0.25);
-    outline: none;
-    padding: 2.5%;
-    background: var(--yellow);
-    border: none;
-    color: white;
-}
-
-.btn-lg{
-    font-weight: 900;
-    font-size: 2rem;
-}
-
-/* Input */
-
-input{
-    box-shadow: inset 5px 5px 4px rgba(0,0,0,0.25);
-    outline: none;
-    border: none;
-    background: #262B37;
-    color: white;
-}
-
-.input-lg{
-    font-size: 1.1rem;
-    padding: 5%;
+    border-radius: 100%;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: 2;
 }
 
 /* Vibe Floating Logo Animation */
 
 .logo{
+    min-width: 274px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     padding-top: 6rem; 
-
 }
 
 .back {
@@ -198,4 +168,88 @@ input{
 }
 .back span:nth-child(7) {
     animation-delay:.6s;
+}
+
+::placeholder{
+    color: white;
+}
+
+/* Buttons */
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    padding: 2.5%;
+    background: rgba(0,0,0,0.0);
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-lg{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Input */
+
+input{
+    padding: 2.5%;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0.25);
+    border: 2px solid white;
+    color: white;
+}
+
+.input-lg{
+    height: 52.5px;
+    font-size: 1.2rem;
+    padding: 5%;
+}
+
+/* Responsive Design */
+
+@media only screen and (orientation: portrait){
+    
+    header{
+        height: 150px;
+    }
+
+    .logo{
+        left: 50%;
+        transform: translate(-45%);
+        padding-top: 3rem;
+    }
+
+    .back span{
+        font-size: 1.5em;
+        color:white;
+        background:#262B37;
+        display:table-cell;
+        padding: 0 15px;
+        height: 25px;
+        padding-top: 2.5%;
+        width: 50px;
+        line-height: 75px;
+        animation:jumb 2s infinite;
+    }
+
+    .main{
+        min-width: 0px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    footer{
+        font-size: 0.65rem;
+    }
+
+}
+
+@media only screen and (max-width: 320) and (max-height: 568){
+
+    footer{
+        font-size: 0.1rem;
+    }
+
 }
