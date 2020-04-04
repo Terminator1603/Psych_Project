@@ -3,4 +3,4 @@
 
 _**Currently under heavy development**_
 
-Hosted [here](singhakshat.com/vibe)
+Hosted [here](http://www.singhakshat.com/vibe)
