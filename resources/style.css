@@ -69,6 +69,7 @@ p{
     max-width: 500px;
     min-width: 400px;
     min-height: 450px;
+    max-height: 512px;
     margin: auto;
     padding: 2rem;
     padding-bottom: 5rem;
@@ -77,22 +78,24 @@ p{
 
 .container{
     height: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     display: grid;
     grid-gap: 1rem;
+    width: 70%;
+    margin: auto;
     align-items: center;
     text-align: center;
 }
 
 footer{
-    margin-bottom: .75rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 0;
-    font-size: .8rem;
-    color: white;
-}
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: .75rem;
+        text-align: center;
+        bottom: 0;
+        font-size: .8rem;
+        color: white;
+    }
 
 h3{
     font-family: 'Roboto Mono', monospace;
@@ -193,6 +196,7 @@ img{
 /* Input */
 
 input{
+    text-align: center;
     padding: 2.5%;
     outline: none;
     border: none;
@@ -209,7 +213,7 @@ input{
 
 /* Responsive Design */
 
-@media only screen and (orientation: portrait){
+@media only screen and (max-width: 767px) {
     
     header{
         height: 150px;
@@ -219,6 +223,10 @@ input{
         left: 50%;
         transform: translate(-45%);
         padding-top: 3rem;
+    }
+
+    .container{
+        overflow: hidden;
     }
 
     .back span{
@@ -244,12 +252,9 @@ input{
         font-size: 0.65rem;
     }
 
-}
-
-@media only screen and (max-width: 320) and (max-height: 568){
-
-    footer{
-        font-size: 0.1rem;
+    .input-lg{
+        font-size: 0.8rem;
     }
+    
 
 }
