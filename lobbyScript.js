@@ -1,8 +1,14 @@
-
+var names = ['yash','rohit','akis'];
+var i=0;
 var mydiv;
-var odiv = document.getElementsByClassName('main')[0];
-
+var odiv = document.querySelector("div.container");
+for(i=0;i<names.length;i++)
+{
   mydiv= document.createElement('DIV');
-  mydiv.className=('lobby_user');
-  mydiv.innerHTML = "hello";
+  if(i===0)
+  mydiv.className=('grid-item-leader');
+  else
+  mydiv.className=('grid-item');
+  mydiv.innerHTML = names[i];
   odiv.appendChild(mydiv);
+}
