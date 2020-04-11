@@ -23,13 +23,6 @@ body {
   position: absolute;
 }
 
-.content {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-}
-
 header {
   position: relative;
   width: 100%;
@@ -42,7 +35,28 @@ p {
   color: white;
 }
 
-.main {
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  bottom: 0;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.card_background {
   position: relative;
   background: rgba(114, 180, 218, 0.75);
   height: 50vh;
@@ -57,37 +71,21 @@ p {
   box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.container-grid {
+.container {
   height: 100%;
-  grid-template-rows: 1fr 2fr 1fr 1fr;
-  display: grid;
-  grid-gap: 1rem;
   width: 70%;
   margin: auto;
   align-items: center;
   text-align: center;
 }
 
-footer {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  text-align: center;
-  bottom: 0;
-  font-size: 0.8rem;
-  color: white;
+.container--grid {
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  display: grid;
+  grid-gap: 1rem;
 }
 
-h1 {
-  color: white;
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-family: "Roboto Mono", monospace;
-}
-
-img {
+.user__picture {
   height: 100px;
   width: 100px;
   margin: auto;
@@ -99,24 +97,25 @@ img {
 
 /* Lobby CSS */
 
-.container {
+.container--grid--lobby {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: unset;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.lobby_users {
-}
-
-.grid-item {
-  margin: 1rem;
+.grid_item {
+  margin: 0.5rem;
   padding: 0.5rem;
   color: white;
   border: 2px solid white;
 }
 
-.grid-item-leader {
-  margin: 1rem;
+.grid_item--leader {
+  margin: 0.5rem;
   padding: 0.5rem;
   border: 2px solid var(--yellow);
   color: var(--yellow);
@@ -184,14 +183,11 @@ img {
   animation-delay: 0.6s;
 }
 
-::placeholder {
-  color: white;
-}
-
 /* Buttons */
 
 .btn {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
   outline: none;
   padding: 2.5%;
   background: rgba(0, 0, 0, 0);
@@ -199,7 +195,7 @@ img {
   color: white;
 }
 
-.btn-lg {
+.btn--lg {
   font-weight: 900;
   font-size: 2rem;
 }
@@ -216,10 +212,14 @@ input {
   color: white;
 }
 
-.input-lg {
+.input--lg {
   height: 52.5px;
   font-size: 1.2rem;
   padding: 5%;
+}
+
+::placeholder {
+  color: white;
 }
 
 /* Responsive Design */
@@ -262,7 +262,7 @@ input {
     font-size: 0.65rem;
   }
 
-  .input-lg {
+  .input--lg {
     font-size: 0.8rem;
   }
 }
