@@ -1,0 +1,194 @@
+* {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.page {
+  margin-left: 10%;
+}
+
+body {
+  background: linear-gradient(177deg, #4ca2cd, #67b26f) fixed;
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  width: 40%;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+
+header h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+header h2 {
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+header .line {
+  width: 6.8rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 1px;
+  background: white;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  padding-right: 25%;
+  font-size: 1.25rem;
+}
+
+.main .user_picture {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+input {
+  margin-top: -1rem;
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0);
+  border: 2.5px solid white;
+  padding: 5%;
+}
+
+input:focus {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 2.5px solid white;
+  padding: 5%;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 30%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  header h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+  header h2 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  header .line {
+    width: 175px;
+    margin: 0.25rem;
+    height: 1px;
+    background: white;
+  }
+  .main .user_picture {
+    width: 125px;
+    height: 125px;
+  }
+  input {
+    font-size: 2rem;
+  }
+  label {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 20%;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+  }
+  header h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+  header h2 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  header .line {
+    width: 175px;
+    margin: 0.25rem;
+    height: 1px;
+    background: white;
+  }
+  .main {
+    grid-gap: 1rem;
+    width: 20rem;
+    padding: 0;
+  }
+  .main .user_picture {
+    width: 75px;
+    height: 75px;
+  }
+  input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: -0.6rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

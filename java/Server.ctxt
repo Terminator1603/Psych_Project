@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Server
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment2.params=text\ p
-comment2.target=void\ seperateInput(java.lang.String,\ Player)
-numComments=3
