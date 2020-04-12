@@ -76,7 +76,7 @@ header {
     font-size: 2.5rem;
   }
   h2 {
-    margin-left: 5px;
+    margin-left: 10px;
     font-weight: 700;
     font-size: 1.25rem;
   }
@@ -99,7 +99,7 @@ header {
     height: 75px;
     border-radius: 50%;
     border: 2px solid $primary;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
   }
 }
 
@@ -118,7 +118,7 @@ input:focus {
 .btn {
   text-transform: uppercase;
   font-size: 1.25rem;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.25);
   outline: none;
   border: 2.5px solid $primary;
   padding: 5%;
@@ -220,4 +220,13 @@ input:focus {
   .btn {
     font-size: 1rem;
   }
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
 }

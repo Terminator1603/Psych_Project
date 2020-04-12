@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <title>Vibe Games | Vibe Truth</title>
+    <title>Vibe Games | Vibe Check</title>
   </head>
   <body ondragstart="return false">
+    <div id="particles-js"></div>
     <div class="page">
       <header>
         <h1>Vibe!</h1>
         <div class="line"></div>
-        <h2>Vibe Truth</h2>
+        <h2>Vibe Rate</h2>
       </header>
       <div class="main">
-        <img src="/images/bobert.png" alt="" class="user_picture" />
+        <img src="images/bobert.png" alt="" class="user_picture" />
         <label for="username">Username:</label>
         <input name="username" type="" />
         <button class="btn">Join a game</button>
         <button class="btn">Make a lobby</button>
       </div>
     </div>
+
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("Particles.json loaded");
+      });
+    </script>
   </body>
 </html>
