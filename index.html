@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -22,12 +21,13 @@
       <div class="main">
         <img src="images/bobert.png" alt="" class="user_picture" />
         <label for="username">Username:</label>
-        <input name="username" type="" />
+        <input name="username" type="" placeholder="Enter Something FFs" onfocus="placeholder=''" onblur="placeholder='Enter Something FFS'" />
         <button class="btn">Join a game</button>
         <button class="btn">Make a lobby</button>
       </div>
     </div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("Particles.json loaded");
