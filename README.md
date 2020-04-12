@@ -1,4 +1,5 @@
-# Vibe! - Inspired by Psych!
+# VIBE GAMES
+## Vibe Rate!
 ## An open source project to mimic the popular mobile game Psych!
 
 _**Currently under heavy development**_
