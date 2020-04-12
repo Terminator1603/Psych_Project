@@ -1,5 +1,6 @@
 * {
-  overflow: auto;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
   margin: 0;
   padding: 0;
   color: white;
@@ -105,7 +106,7 @@ input:focus {
   border: 2.5px solid white;
   padding: 5%;
   -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .btn:hover {
