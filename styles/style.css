@@ -90,7 +90,7 @@ input {
   font-size: 1.25rem;
   background: rgba(0, 0, 0, 0);
   border: 2.5px solid white;
-  padding: 5%;
+  padding: 2.5%;
 }
 
 input:focus {
@@ -105,7 +105,7 @@ input:focus {
   border: 2.5px solid white;
   padding: 5%;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .btn:hover {
@@ -115,7 +115,7 @@ input:focus {
 @media only screen and (min-width: 768px) {
   header {
     width: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 10%;
   }
   header h1 {
@@ -133,18 +133,22 @@ input:focus {
     height: 1px;
     background: white;
   }
+  .main {
+    max-width: 400px;
+  }
   .main .user_picture {
-    width: 125px;
-    height: 125px;
+    width: 75px;
+    height: 75px;
   }
   input {
-    font-size: 2rem;
+    padding: 2.5%;
+    font-size: 1rem;
   }
   label {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .btn {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -153,7 +157,7 @@ input:focus {
     width: 20%;
     margin: 0;
     margin-top: 5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 5%;
   }
   header h1 {
     font-weight: 900;
@@ -171,24 +175,25 @@ input:focus {
     background: white;
   }
   .main {
-    grid-gap: 1rem;
-    width: 20rem;
+    grid-gap: 2rem;
+    width: 25rem;
     padding: 0;
+    max-width: 500px;
   }
   .main .user_picture {
     width: 75px;
     height: 75px;
   }
   input {
+    margin-top: -1.5rem;
     font-size: 1rem;
-    padding: 0.5rem;
-    margin-top: -0.6rem;
+    padding: 2.5%;
   }
   label {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .btn {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

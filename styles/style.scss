@@ -108,7 +108,7 @@ input {
   font-size: 1.25rem;
   background: rgba(0, 0, 0, 0);
   border: 2.5px solid $primary;
-  padding: 5%;
+  padding: 2.5%;
 }
 
 input:focus {
@@ -132,7 +132,7 @@ input:focus {
 @media only screen and (min-width: 768px) {
   header {
     width: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 10%;
     h1 {
       font-weight: 900;
@@ -151,21 +151,25 @@ input:focus {
     }
   }
 
-  .main .user_picture {
-    width: 125px;
-    height: 125px;
+  .main {
+    max-width: 400px;
+    .user_picture {
+      width: 75px;
+      height: 75px;
+    }
   }
 
   input {
-    font-size: 2rem;
+    padding: 2.5%;
+    font-size: 1rem;
   }
 
   label {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .btn {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -194,23 +198,26 @@ input:focus {
 
   .main {
     grid-gap: 2rem;
-    width: 30rem;
+    width: 25rem;
     padding: 0;
+    max-width: 500px;
     .user_picture {
-      width: 125px;
-      height: 125px;
+      width: 75px;
+      height: 75px;
     }
   }
 
   input {
-    font-size: 3rem;
+    margin-top: -1.5rem;
+    font-size: 1rem;
+    padding: 2.5%;
   }
 
   label {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .btn {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
