@@ -4,4 +4,4 @@
 
 _**Currently under heavy development**_
 
-Hosted [here](http://www.singhakshat.com/vibe)
+Hosted <a href = "http://www.singhakshat.com/vibe" target = "_blank">here</a>
