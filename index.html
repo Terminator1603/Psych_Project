@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Vibe Games | Vibe Check</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe | Outfox your friends</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   </head>
-  <body ondragstart="return false">
-    <div id="particles-js"></div>
-    <div class="page">
-      <header>
+  <body>
+    <div id="vantajs" class="page">
+      <div class="logo">
         <h1>Vibe!</h1>
-        <div class="line"></div>
-        <h2>Vibe Rate</h2>
-      </header>
-      <div class="main">
-        <img src="images/bobert.png" alt="" class="user_picture" />
-        <label for="username">Username:</label>
-        <input
-          name="username"
-          type=""
-          placeholder="Enter Something FFs"
-          onfocus="placeholder=''"
-          onblur="placeholder='Enter Something FFS'"
-        />
-        <button class="btn">Join a game</button>
-        <button class="btn">Make a lobby</button>
+        <div class="separator"></div>
+        <h2>Outfox your friends</h2>
+      </div>
+      <div class="content">
+        <div id="main_form" class="form">
+          <button class="upload_picture"></button>
+          <div class="login">
+            <input type="text" id="usrnm" placeholder="Username" />
+            <button id="join_game" class="btn">Join a game</button>
+            <button id="create_game" class="btn">Create a lobby</button>
+          </div>
+        </div>
+        <div class="lobby"></div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Vantajs Code -->
+    <script src="three.r95.min.js"></script>
+    <script src="vanta.dots.min.js"></script>
     <script>
-      particlesJS.load("particles-js", "particles.json", function () {
-        console.log("Particles.json loaded");
+      VANTA.DOTS({
+        el: "#vantajs",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        showLines: false,
+        size: 5,
+        color: 0x502e61,
+        backgroundColor: 0xf1c6d3,
       });
     </script>
   </body>

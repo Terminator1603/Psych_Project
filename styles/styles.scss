@@ -1,0 +1,200 @@
+$darkpurple: #502e61;
+$gradient1: #fce2db;
+$gradient2: #f1c6d3;
+$pinkaccent: #e4a3d4;
+$lightaccent: #f7d5d7;
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  animation: fadein 2s;
+  height: 100vh;
+  background: linear-gradient(180deg, #fce2db, #f1c6d3);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .logo {
+    width: 20rem;
+    margin: 3rem auto;
+    color: $darkpurple;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.4rem;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .separator {
+      margin: 0.5rem;
+      height: 1px;
+      background: white;
+    }
+  }
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background: $lightaccent;
+  border: 2.5px solid $pinkaccent;
+  color: $darkpurple;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  outline: none;
+  border: 2.5px solid #e4a3d4;
+  background: #f7d5d7;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.form {
+  margin: auto;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.upload_picture {
+  border: 2.5px solid #e4a3d4;
+  background: $lightaccent;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.login {
+  margin: auto;
+  width: 20rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+#vantajs {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  margin: auto;
+  height: 70%;
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .page {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logo {
+    margin: auto 2rem;
+    width: 40%;
+  }
+
+  .content {
+    height: unset;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .logo h2 {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.75rem;
+  }
+  .upload_picture {
+    height: 100px;
+    width: 100px;
+  }
+  .login {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .page {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logo {
+    margin: auto 2rem;
+    width: 40%;
+  }
+
+  .content {
+    height: unset;
+    width: 60%;
+  }
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .logo h2 {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.75rem;
+  }
+  input {
+    font-size: 1rem;
+  }
+  ::placeholder {
+    font-size: 0.75rem;
+  }
+  .upload_picture {
+    height: 100px;
+    width: 100px;
+  }
+  .login {
+    width: auto;
+  }
+}
